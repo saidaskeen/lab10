@@ -20,7 +20,7 @@ data="DATABASE"
 back="BACKUP"
 
 # Handels cases were the user does not add a service
-if [ "$servicetype" != "$dns" ] && [ "$servicetype" != "$web" ] && [ "$servicetype" != "$ftp" ] && [ "$servicetype" != "$data" ]; then
+if [ "$servicetype" != "$dns" ] && [ "$servicetype" != "$web" ] && [ "$servicetype" != "$back" ] && [ "$servicetype" != "$ftp" ] && [ "$servicetype" != "$data" ]; then
     echo "Error: Unsupported servicetype '$servicetype'. Please provide one of the following: DNS, WEB, FTP, DATABASE."
     exit 1
 fi
