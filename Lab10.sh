@@ -77,7 +77,7 @@ setup_web() {
 
 # ftp setup function
 setup_ftp() {
-    echp "Now configuring FTP firewall rules"
+    echo "Now configuring FTP firewall rules"
     ufw allow 22/tcp
     ufw allow 21/tcp
     ufw allow 20/tcp
